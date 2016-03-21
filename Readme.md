@@ -1,5 +1,6 @@
 # EMiL - Rosetta integration service
 [![Build Status](https://travis-ci.org/emil-emulation/emil-integration-framework.svg?branch=master)](https://travis-ci.org/emil-emulation/emil-integration-framework)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/ae1606d194c94c0d926805e697b94785)](https://www.codacy.com/app/marcus_2/emil-integration-framework)
 
 A microservice framework providing object storage metadata from an arbitrary archive to EMiL. The REST-Interface provides data as JSON or XML based on HTTP content negotiation (default: JSON).
 
