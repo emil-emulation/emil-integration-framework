@@ -3,6 +3,7 @@
  */
 package de.multimedia.emulation.emil.integration.service;
 
+import de.multimedia.emulation.emil.integration.exceptions.ConfigurationException;
 import de.multimedia.emulation.emil.integration.model.pid.Pid;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -28,7 +29,7 @@ public class UrlGenerator {
     try {
       return new URL(urlTemplate.replace("[identifier]", pid.getPid()));
     } catch (MalformedURLException exception) {
-      throw new RuntimeException("Could not create URL - actually this should not be possible.", exception);
+      throw new ConfigurationException("Could not create URL - actually this should not be possible.", exception);
     }
   }
 
