@@ -13,7 +13,7 @@ public class DemoServiceTest {
     DemoConfig config = new DemoConfig();
     config.setObjectId("ID12345");
     DemoService demoService = new DemoService(config);
-    assertThat(demoService.getDemoObject().getId(), is("IE12345"));
+    assertThat(demoService.getDemoObject().getId(), is("ID12345"));
   }
 
 }
