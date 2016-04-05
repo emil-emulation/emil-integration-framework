@@ -1,4 +1,12 @@
 language: java
-
 jdk:
-  - oraclejdk8
+- oraclejdk8
+deploy:
+  provider: releases
+  api_key:
+    secure: QhnauxsAvtwgIuE/97Qh+c+uxfESzXenD58/DocAJSxMDYZhheGVTGYvR7fBSzcKzZy2aKy1ILXodhY4YH7gEUFg/qlgznGzGoRhOz12+Pp4KzUlRvuIvKNzmTt6msM0bS8dYvG9doyNX6OnK6AmEKJNfYvIP2qTorZ499esCCew5NHUs8ercUoBcWHGOcZv+rgvkLf+EnIzP2By+2kDBnDoMx4oc4kRFcp5MdkTJ8X0NUq5x15PCrKoNL5ZE251x9d0C+OXYzdnz5a43Ud3HePWC7/e0BS43VHOGLnmzP3YxMR3idMxo+l7Zgpu4Dhqozp5HB7mJjVXj+3/YY5wVHWuNkA4te78a2ZcCsuHt8CsHHDSuQ/nhrroqyH8+6mJz67GfysjlB1g7nFrNKXSe8Z05E/EfFgIa4zKUiJDVzC6w7cPx/I+/GuSNaM95cxXdc8ElVAIVMHG2Qx7w543bGnm3AABxdJLfDX2dCT286muEIvgqltou6XmzVJH0LUgKq1mDGOr2PLRtJyc16WsW+m2nx+ORgKztO6wwh0z2wuWayCO7K2uq1NNRRle6b4XnC0mo9WZSgcP5c11HgKUTX1xVrY3dyc4OwkyrMfItXKc6wzS2gxCkpGpLDxDF9CS3frdxC13gluCr+5XXv29OgxQFC0+9DET971YMwI8NOg=
+  file_glob: true
+  file: target/framework*.jar
+  skip_cleanup: true
+  on:
+    tags: true
