@@ -2,6 +2,7 @@ package de.multimedia.emulation.emil.integration.model.pid;
 
 import static org.hamcrest.CoreMatchers.anything;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
@@ -32,6 +33,13 @@ public class StringPidTest {
     Pid first = new StringPid("AAA");
     Pid second = new StringPid("AAA");
     assertThat(first, is(second));
+  }
+
+
+  @Test
+  public void pidShouldNotEqualOtherType() {
+    Pid first = new StringPid("AAA");
+    assertThat(first, is(not("AAA")));
   }
 
   @Test
