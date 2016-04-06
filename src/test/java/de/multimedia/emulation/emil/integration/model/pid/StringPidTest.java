@@ -9,41 +9,35 @@ import org.junit.Test;
  *
  * @author Marcus Bitzl <marcus.bitzl@bsb-muenchen.de>
  */
-public class AbstractPidTest {
-
-  class TestPid extends AbstractPid {
-    public TestPid(String pid) {
-      super(pid);
-    }
-  }
+public class StringPidTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void pidMustNotBeEmpty() {
-    assertThat(new TestPid(""), is(anything()));
+    assertThat(new StringPid(""), is(anything()));
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void pidMustNotBeNull() {
-    assertThat(new TestPid(null), is(anything()));
+    assertThat(new StringPid(null), is(anything()));
   }
 
   @Test
   public void getPidShouldReturnPid() {
-    Pid pid = new TestPid("XXXX");
+    Pid pid = new StringPid("XXXX");
     assertThat(pid.getPid(), is("XXXX"));
   }
 
   @Test
   public void pidsShouldBeEqualForEqualValue() {
-    Pid first = new TestPid("AAA");
-    Pid second = new TestPid("AAA");
+    Pid first = new StringPid("AAA");
+    Pid second = new StringPid("AAA");
     assertThat(first, is(second));
   }
 
   @Test
   public void hashCodeShouldBeEqualForEqualPids() {
-    Pid first = new TestPid("AAA");
-    Pid second = new TestPid("AAA");
+    Pid first = new StringPid("AAA");
+    Pid second = new StringPid("AAA");
     assertThat(first.hashCode(), is(second.hashCode()));
   }
 
