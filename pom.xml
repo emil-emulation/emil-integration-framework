@@ -49,6 +49,12 @@
       <version>${version.mockito}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.agileware</groupId>
+      <artifactId>smartunit</artifactId>
+      <version>0.10.2</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
