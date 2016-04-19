@@ -27,7 +27,7 @@ To provide data from your archive to EMiL, your implementation has to implement 
     }
 
 
-### Implementation
+### Run your service
 
     java -jar <your implementation>.jar
 
