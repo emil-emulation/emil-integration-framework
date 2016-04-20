@@ -1,4 +1,4 @@
-# EMiL - Rosetta integration service
+# EMiL - Archive Integration Framework
 [![Build Status](https://travis-ci.org/emil-emulation/emil-integration-framework.svg?branch=master)](https://travis-ci.org/emil-emulation/emil-integration-framework)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/ae1606d194c94c0d926805e697b94785)](https://www.codacy.com/app/marcus_2/emil-integration-framework)
 [![codecov.io](https://codecov.io/github/emil-emulation/emil-integration-framework/coverage.svg?branch=master)](https://codecov.io/github/emil-emulation/emil-integration-framework?branch=master)
