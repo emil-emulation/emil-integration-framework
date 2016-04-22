@@ -34,7 +34,7 @@ public class EmilController {
    * @return A representation of the object and all suitable files.
    * @throws Exception if the request fails.
    */
-  @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = {"application/json", "application/xml"})
+  @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = {"application/json"})
   @ResponseBody
   public ArchiveObject get(@PathVariable("id") String id) throws Exception {
     if (demoService.isDemoObjectId(id)) {

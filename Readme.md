@@ -52,6 +52,3 @@ This service also offers a freely configurable demo object (see application.yml.
 
 In application.yml one can define one PID with the desired response for testing. In case of this PID, the underlying archive won't be queried.
 
-## Content Negotiation
-
-If not ordered otherwise the service produces JSON. To get an XML representation, use `Accept: application/xml` header or add ".xml" at the end of the URL *(experimental)*.
