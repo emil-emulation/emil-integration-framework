@@ -49,7 +49,7 @@ public class DemoFile implements ArchiveFile {
 
   @Override
   public FileType getType() {
-    return FileType.valueOf(type.toUpperCase());
+    return FileType.fromExtension(type.toUpperCase());
   }
 
   public void setType(String type) {

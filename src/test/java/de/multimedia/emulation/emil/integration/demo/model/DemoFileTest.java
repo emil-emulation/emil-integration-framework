@@ -31,7 +31,7 @@ public class DemoFileTest {
   public void getTypeShouldReturnEnum() {
     DemoFile demoFile = new DemoFile();
     demoFile.setType("iso");
-    assertThat(demoFile.getType(), is(FileType.ISO));
+    assertThat(demoFile.getType(), is(FileType.CDROM));
   }
 
 }

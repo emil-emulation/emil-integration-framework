@@ -6,6 +6,17 @@ package de.multimedia.emulation.emil.integration.model.object;
  */
 public enum FileType {
 
-  ISO, IMG, UNKNOWN;
-  
+  CDROM, DISK, FLOPPY, UNKNOWN;
+
+  public static FileType fromExtension(String extension) {
+    switch (extension.toUpperCase()) {
+      case "ISO":
+        return CDROM;
+      case "IMG":
+        return FLOPPY;
+      default:
+        return UNKNOWN;
+    }
+  }
+
 }

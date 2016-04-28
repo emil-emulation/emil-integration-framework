@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.multimedia.emulation.emil.integration</groupId>
   <artifactId>framework</artifactId>
-  <version>1.1-RELEASE</version>
+  <version>1.2-RELEASE</version>
   <name>EMiL - Integration Microservice Framework</name>
   <packaging>jar</packaging>
 
